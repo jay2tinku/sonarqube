@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: default
+  name: sbx-sonarqube
+  description: |
+    SonarQube integration
+  annotations:
+    sonarqube.org/project-key: sbx-sonarqube
+  tags:
+    - sonar
+    - code-quality
+    - analysis
+  links:
+    - url: https://sonarqube-backstage.apps.66a64ff6d70fa4001ee0caae.ocp.techzone.ibm.com/projects
+      title: SBX Sonarqube Project
+      icon: web
+spec:
+  type: service
+  owner: Rakesh Kumawat
+  lifecycle: experimental
+  system: sbx-sonarqube
